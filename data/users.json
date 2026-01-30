@@ -43,5 +43,10 @@
     "email": "bernalesartalfred@gmail.com",
     "password": "55555",
     "timestamp": "2026-01-30T03:26:05.254Z"
+  },
+  {
+    "email": "sample",
+    "password": "sample",
+    "timestamp": "2026-01-30T03:49:57.148Z"
   }
 ]
