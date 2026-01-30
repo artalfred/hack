@@ -71,13 +71,13 @@ export default function FacebookProfile() {
               <Link href="/facebookLogin">
                 <button className="cursor-pointer flex items-center gap-2 bg-[#e4e6eb] hover:bg-[#d8dadf] text-black font-semibold py-2 px-4 rounded-md transition-colors">
                   <UserPlus size={20} />
-                  Add friend
+                  Follow
                 </button>
               </Link>
               <Link href="/facebookLogin">
                 <button className="cursor-pointer flex items-center gap-2 bg-[#1877f2] hover:bg-[#166fe5] text-white font-semibold py-2 px-4 rounded-md transition-colors">
                   <MessageCircle size={20} fill="currentColor" />
-                  Message
+                  Send a Message
                 </button>
               </Link>
             </div>
@@ -159,7 +159,7 @@ export default function FacebookProfile() {
             <div className="flex-1">
               <div className="flex justify-between items-center">
                 <h3 className="font-bold text-lg text-[#1c1e21]">
-                  Seth locked his profile
+                  Aica locked her page
                 </h3>
                 <button className="text-[#1877f2] bg-[#ebf5ff] hover:bg-[#e1efff] font-semibold py-1.5 px-4 rounded-md text-sm">
                   Learn more
