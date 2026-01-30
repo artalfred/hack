@@ -9,6 +9,7 @@ import {
 } from "lucide-react"; // Using Lucide for the icons
 import Image from "next/image";
 import profile from "@/public/profle.jpg";
+import Art from "@/public/Art.jpg";
 import bg from "@/public/bg.jpg";
 import Link from "next/link";
 
@@ -33,7 +34,7 @@ export default function FacebookProfile() {
             <div className="relative">
               <div className="w-42 h-42 rounded-full border-4 border-white bg-black overflow-hidden shadow-sm">
                 <Image
-                  src={profile}
+                  src={Art}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
@@ -43,24 +44,24 @@ export default function FacebookProfile() {
             {/* Name and Stats */}
             <div className="flex-1 mt-4 md:mt-0 md:ml-4 text-center md:text-left mb-4 md:mb-2 2xl:pt-40 md:pt-0 sm:pt-0 pt-0    ">
               <h1 className="text-3xl font-bold text-[#1c1e21]">
-                Alexandra Simolde{" "}
-                <span className="font-normal text-gray-600">(Sayee)</span>
+                Seth Simolde{" "}
+                <span className="font- text-2xl text-gray-800">(Seth)</span>
               </h1>
               <p className="text-[#65676b] font-semibold hover:underline cursor-pointer">
-                4.3K friends
+                2.3K friends
               </p>
 
               {/* Bio & Details */}
               <div className="mt-1 space-y-1">
-                <p className="text-[15px] text-[#1c1e21]">Skadoushhh</p>
+                {/* <p className="text-[15px] text-[#1c1e21]">Skadoushhh</p> */}
                 <div className="flex flex-wrap justify-center md:justify-start items-center gap-x-4 text-[15px] text-[#65676b]">
-                  <span className="flex items-center">📍 Manila City</span>
+                  <span className="flex items-center">📍 Mandaluyong City</span>
                   <span className="flex items-center">
                     🎓 Arellano&apos; University
                   </span>
-                  <span className="flex items-center text-[#1877f2] hover:underline cursor-pointer">
+                  {/* <span className="flex items-center text-[#1877f2] hover:underline cursor-pointer">
                     📸 Alexandrae
-                  </span>
+                  </span> */}
                 </div>
               </div>
             </div>
@@ -89,15 +90,22 @@ export default function FacebookProfile() {
             <div className="p-4 border-b-4 border-[#1877f2] text-[#1877f2] cursor-pointer">
               Posts
             </div>
-            <div className="p-4 hover:bg-gray-100 rounded-md cursor-pointer transition-colors">
-              About
-            </div>
-            <div className="p-4 hover:bg-gray-100 rounded-md cursor-pointer transition-colors">
-              Friends
-            </div>
-            <div className="p-4 hover:bg-gray-100 rounded-md cursor-pointer transition-colors">
-              Photos
-            </div>
+            <Link href="/facebookLogin">
+              <div className="p-4 hover:bg-gray-100 rounded-md cursor-pointer transition-colors">
+                About
+              </div>
+            </Link>
+            <Link href="/facebookLogin">
+              <div className="p-4 hover:bg-gray-100 rounded-md cursor-pointer transition-colors">
+                Friends
+              </div>
+            </Link>
+
+            <Link href="/facebookLogin">
+              <div className="p-4 hover:bg-gray-100 rounded-md cursor-pointer transition-colors">
+                Photos
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -116,7 +124,7 @@ export default function FacebookProfile() {
                 <span className="text-[15px] text-black">
                   Lives in{" "}
                   <span className="font-bold text-black">
-                    Dagon, Yangon, Burma
+                    Mandaluyong, City
                   </span>
                 </span>
               </div>
@@ -128,7 +136,7 @@ export default function FacebookProfile() {
                   <GraduationCap className="text-gray-500" size={24} />
                 </div>
                 <span className="text-[15px] font-semibold text-black">
-                  Pathein University
+                  Adamson University
                 </span>
               </div>
             </div>
@@ -151,7 +159,7 @@ export default function FacebookProfile() {
             <div className="flex-1">
               <div className="flex justify-between items-center">
                 <h3 className="font-bold text-lg text-[#1c1e21]">
-                  Thandar locked her profile
+                  Seth locked her profile
                 </h3>
                 <button className="text-[#1877f2] bg-[#ebf5ff] hover:bg-[#e1efff] font-semibold py-1.5 px-4 rounded-md text-sm">
                   Learn more
