@@ -12,6 +12,12 @@ import profile from "@/public/profle.jpg";
 import Art from "@/public/Art.jpg";
 import bg from "@/public/bg.jpg";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Seth Simolde Profile ID sethprofile398573423",
+  description: "sethprofile398573423",
+};
 
 export default function FacebookProfile() {
   return (

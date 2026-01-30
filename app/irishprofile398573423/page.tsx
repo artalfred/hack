@@ -9,9 +9,14 @@ import {
 } from "lucide-react"; // Using Lucide for the icons
 import Image from "next/image";
 import irish from "@/public/irish.jpg";
-import Art from "@/public/Art.jpg";
 import irishbg from "@/public/irishbg.jpg";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Iris Vale Profile ID irishprofile398573423",
+  description: "irishprofile398573423",
+};
 
 export default function FacebookProfile() {
   return (

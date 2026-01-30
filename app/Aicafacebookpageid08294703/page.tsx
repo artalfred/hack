@@ -12,6 +12,12 @@ import profile from "@/public/profle.jpg";
 import aica from "@/public/aica.jpg";
 import aicabg from "@/public/aicabg.jpg";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Aica Gonzales Profile ID Aicafacebookpageid08294703",
+  description: "Aicafacebookpageid08294703",
+};
 
 export default function FacebookProfile() {
   return (
