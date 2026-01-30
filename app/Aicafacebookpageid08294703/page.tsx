@@ -9,8 +9,8 @@ import {
 } from "lucide-react"; // Using Lucide for the icons
 import Image from "next/image";
 import profile from "@/public/profle.jpg";
-import Art from "@/public/Art.jpg";
-import bg from "@/public/bg.jpg";
+import aica from "@/public/aica.jpg";
+import aicabg from "@/public/aicabg.jpg";
 import Link from "next/link";
 
 export default function FacebookProfile() {
@@ -21,7 +21,7 @@ export default function FacebookProfile() {
         {/* Cover Photo */}
         <div className="relative h-62.5 md:h-87.5 lg:h-100 w-full overflow-hidden rounded-b-lg">
           <Image
-            src={bg}
+            src={aicabg}
             alt="Cover"
             className="w-full h-full object-cover bg-cover"
           />
@@ -34,7 +34,7 @@ export default function FacebookProfile() {
             <div className="relative">
               <div className="w-42 h-42 rounded-full border-4 border-white bg-black overflow-hidden shadow-sm">
                 <Image
-                  src={Art}
+                  src={aica}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
@@ -44,11 +44,11 @@ export default function FacebookProfile() {
             {/* Name and Stats */}
             <div className="flex-1 mt-4 md:mt-0 md:ml-4 text-center md:text-left mb-4 md:mb-2 2xl:pt-40 md:pt-0 sm:pt-0 pt-0    ">
               <h1 className="text-3xl font-bold text-[#1c1e21]">
-                Seth Simolde{" "}
+                Aica Gonzales{" "}
                 <span className="font- text-2xl text-gray-800">(Seth)</span>
               </h1>
               <p className="text-[#65676b] font-semibold hover:underline cursor-pointer">
-                2.3K friends
+                10.3K followers
               </p>
 
               {/* Bio & Details */}
