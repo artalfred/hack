@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Seth Simolde Profile ID sethprofile398573423",
-  description: "sethprofile398573423",
+  title: "Iris Vale Profile ID sethprofile398573423",
+  description: "Irishprofile398573423",
 };
 
 export default function RootLayout({
